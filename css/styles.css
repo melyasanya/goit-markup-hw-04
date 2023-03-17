@@ -167,8 +167,9 @@ address {
     ),
     url(../images/hero-image.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
-  min-width: 1440px;
+  width: 1440px;
 }
 
 .hero-title {
@@ -319,25 +320,23 @@ address {
   justify-content: center;
   gap: 24px;
 }
-.customers-list-item {
+.customers-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 168px;
   height: 88px;
   border: 1px solid var(--customers-color);
   border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color: var(--customers-color);
 }
 .customers-list-icon {
-  fill: var(--customers-color);
+  fill: currentColor;
 }
-.customers-list-item:hover,
-.customers-list-item:focus {
+.customers-list-link:hover,
+.customers-list-link:focus {
+  color: var(--accent-color);
   border: 1px solid var(--accent-color);
-}
-.customers-list-icon:hover,
-.customers-list-icon:focus {
-  fill: var(--accent-color);
 }
 
 /* footer */
