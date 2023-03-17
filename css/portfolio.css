@@ -217,7 +217,16 @@ header {
   padding-bottom: 32px;
   padding-left: 16px;
   padding-right: auto;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+
+.examples-info:hover,
+.examples-info:focus {
+  cursor: pointer;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .examples-image {
   margin-bottom: 0;
 }
@@ -241,4 +250,39 @@ header {
 .footer-logo {
   color: var(--contacts-color-secondary);
   margin-bottom: 16px;
+}
+.footer-social {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--third-color);
+  margin-bottom: 16px;
+}
+.footer-container {
+  display: flex;
+  align-items: flex-start;
+}
+.footer-left {
+  margin-right: 120px;
+}
+.footer-social-list {
+  display: flex;
+  gap: 16px;
+}
+.footer-social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-social-list-link:hover,
+.footer-social-list-link:focus {
+  background-color: #31d0aa;
+}
+.footer-list-icon {
+  fill: var(--contacts-color-secondary);
 }
